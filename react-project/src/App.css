@@ -1,0 +1,74 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+
+.container{
+  
+
+  /* 'header  header header header'
+  'navbar messages messages section_2'
+  'navbar messages messages section_2' */
+ 
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr;
+grid-template-rows: 130px 500px 500px 300px;
+  grid-template-areas: 
+   'header  header header header'
+  'navbar main main main'
+  'navbar main main main' 
+  'navbar main main main'       ;
+}
+.header{
+ grid-area: header;
+ background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+
+}
+.navbar{
+  grid-area: navbar;
+ 
+  background: #acb6e5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+}
+.main{
+  grid-area:main;
+  /* background-color: rgba(192,192,192,0.3); */
+  /* background: linear-gradient(to right, #86fde8, #acb6e5);  */
+
+   
+
+  
+}
+
+.message{
+  grid-area:message;
+ 
+
+}
+
+.section_2{
+  grid-area:section_2;
+  
+}
+.post{
+  grid-area:post;
+ 
+  
+}
